@@ -1,17 +1,16 @@
 public class Engine {
-
     private FuelType fuelType;
     private double currentFuel;
     private double maxFuel;
 
     public Engine (FuelType f, double max){
-        fuelType = f;
-        maxFuel = max;
-        currentFuel = maxFuel;
+        this.fuelType = f;
+        this.maxFuel = max;
+        this.currentFuel = maxFuel;
     }
 
     public void refuel () {
-        currentFuel = maxFuel;
+        this.currentFuel = this.maxFuel;
     }
 
     public void go () {
